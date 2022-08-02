@@ -5,20 +5,30 @@
     </head>
     <body>
         <div id="main">
-        <h1 id="h1">Expense tracker</h1>
-
+        <h1 id="h1">Expense Tracker</h1>
+        <p id="p">Beaware Of Little Expense. A Small Leake Will Sink Great Ship </p>
+        <div class="col-sm-4">
         <form id="form">
-            <input type="text" id="expense" placeholder="Enter Expense In Rupees">
-            <input type="text" id="description" placeholder="Enter Expense details">
-            <input type="text" id="cat" placeholder="Category">
-            <button id="btn">ADD</button>
+            <!-- <label class="label">Enter Expense In Rupees</label> -->
+            <input type="text" id="expense" class="input" placeholder="Enter Expense In Rupees">
+            <!-- <label class="label">Enter Expense details</label> -->
+            <input type="text" id="description" class="input" placeholder="Enter Expense details">
+            <!-- <label class="label">Category</label> -->
+            <input type="text" id="cat" class="input" placeholder="Category">
         </form>
+    </div>
+    <div class="btn">
+        <button id="btn">Add Your Expense</button>
+    </div>
+    <div class="items">
         <ul id="items">
-            <li>
-                this is your list
+            <li id="list">
+                Your Expenses Are
             </li>
         </ul>
     </div>
+    </div>
         <script src="./main.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </body>
 </html>
